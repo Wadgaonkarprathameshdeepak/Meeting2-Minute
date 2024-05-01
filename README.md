@@ -1,6 +1,7 @@
 # Minute2Meet text summarizer
 
-<a href="https://ibb.co/tYRQFsR"><img src="https://i.ibb.co/mhpbgqp/log3.jpg" alt="log3" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
+![Screenshot 2023-11-03 165710](https://github.com/Wadgaonkarprathameshdeepak/Meeting2-Minute/assets/95523666/829caf59-9212-4172-b2e6-bb53e0ec4eeb)
+![Screenshot 2023-11-24 230831](https://github.com/Wadgaonkarprathameshdeepak/Meeting2-Minute/assets/95523666/98fbd6d4-50d0-4dec-9970-0c4a11041ff7)
 
 ## Setup
 
