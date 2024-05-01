@@ -40,7 +40,7 @@ def load_models():
     print('Finish Loading!')
     loaded_models = True
 
-API_key = "057a0adabc0e4d25ba5e9db2d155c8b0" 
+API_key = # use any API KEY to convert Audio to text or you can develope your own API 
 
 headers = headers = {
     'authorization': API_key, 
