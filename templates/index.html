@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+    <link id='#' rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjVQfiVMkZIhhrRdizsk9EGoYMyNbD-iWFOA&usqp=CAU" type="">
+
+
+
+    <script type="text/javascript">// <![CDATA[
+        function loading() {
+            $("#loading").show();
+            $("#content").hide();
+        }
+// ]]></script>
+    <title>Meet2Minutes
+    </title>
+
+</head>
+
+
+<body>
+
+
+    <section>
+        <h1 id="heading">Generate the MOM </h1>
+        <style>
+            #heading {
+                font-size: 80px;
+              color: white;
+              text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            }
+          </style>
+          
+
+        <!--     <br>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="image1.jpeg" height='250px' style="width:100%">
+        </div>
+        <div class="mySlides">
+            <img src="image2.jpeg" height='250px' style="width:100%">
+        </div>
+        <div class="mySlides">
+            <img src="image3.jpeg" height='250px' style="width:100%">
+        </div>
+    </div> -->
+        <br>
+        <main>
+
+            <table>
+
+                <thead>
+                    <tr id="phone">
+                        <td>
+                            <div>
+                                <form method="post" action="/model">
+                                    <h2>Enter your <span style="color: #E90428;">text</span> that is to be <span
+                                            style="color: #BB0E7E;">summarized</span></h2>
+                                    <br>
+                                    <textarea placeholder="Paste here the passage that is to be summarised!"
+                                        name="text"></textarea>
+                                    <br>
+                                    
+                                    <!-- <h6>Choose your Output Language: <input type="text" name=lang></h6> -->
+                                    <label for="lang">Choose your Output Language:</label>
+                                    <select id="lang" name="lang">
+                                        <option value="en">English</option>
+                                        <option value="es">Spanish</option>
+                                        <option value="fr">French</option>
+                                        <option value="de">German</option>
+                                        <option value="it">Italian</option>
+                                        <option value="pt">Portuguese</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="ja">Japanese</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="ar">Arabic</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="bn">Bengali</option>
+                                        <option value="ms">Malay</option>
+                                        <option value="ta">Tamil</option>
+                                        <option value="te">Telugu</option>
+                                        <option value="th">Thai</option>
+                                        <option value="ur">Urdu</option>
+                                        <option value="fa">Farsi</option>
+                                        <option value="tr">Turkish</option>
+                                        <option value="ko">Korean</option>
+                                    </select>
+
+                                    <input id="sum" class=" btn btn-warning btn-md active" role="button"
+                                        aria-pressed="true"
+                                        style="display: block;margin-top: 5px; color:#fefae0; background-color: #BB0E7E;border-color: #BB0E7E; font-size: 20px;
+                                        "
+                                        type="submit" value="Summarize" onclick="loading()"><img id="loading">
+
+                                </form>
+                            </div>
+                        </td>
+
+                        
+                        
+
+                    </tr>
+
+
+                </thead>
+
+                <tbody>
+                    <form method="post" action="/audio">
+                        <tr>
+                            <th>
+                                <h6 style="margin-top: 20px;"><span class="or" style="color:#ef233c;font-size: 28px;"><u>OR</u></span>
+                                </h6>
+                                <div>
+
+                                    <h5 style="font-size: 33px;">Upload Your audio/video file </h5> <input type="file" message=Choose name=file enctype="multipart/form-data" style="font-size: 25px;">
+                                    <br></br>
+<label for="lang1" style="font-size: 33px;">Choose your Output Language:</label>
+                                    <select id="lang1" name="lang1">
+                                        <option value="en">English</option>
+                                        <option value="es">Spanish</option>
+                                        <option value="fr">French</option>
+                                        <option value="de">German</option>
+                                        <option value="it">Italian</option>
+                                        <option value="pt">Portuguese</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="ja">Japanese</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="ar">Arabic</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="bn">Bengali</option>
+                                        <option value="ms">Malay</option>
+                                        <option value="ta">Tamil</option>
+                                        <option value="te">Telugu</option>
+                                        <option value="th">Thai</option>
+                                        <option value="ur">Urdu</option>
+                                        <option value="fa">Farsi</option>
+                                        <option value="tr">Turkish</option>
+                                        <option value="ko">Korean</option>
+                                    </select>
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <input id="sum2" class="btn btn-primary btn-md primary" role="button"
+                                    aria-pressed="true" style="font-size: 20px;
+                                " type="submit"
+                                    value="Summarize your File" onclick="loading">
+                                <img id="loading2">
+                            </td>
+                            
+                        </tr>
+
+
+
+                    </form>
+                </tbody>
+
+
+
+            </table>
+
+
+        </main>
+    </section>
+
+
+
+
+    
+
+
+    
+
+
+
+    <script>
+
+        const submit = document.querySelector('#sum').addEventListener("click", function () {
+            const bg = document.querySelector('#sum');
+            const lod = document.querySelector('#loading');
+            lod.style.width = '50px';
+            lod.style.height = '30px';
+            lod.src = 'https://media3.giphy.com/media/3o7bu3XilJ5BOiSGic/giphy.gif?cid=ecf05e4717hw7w67ryutyba0ga5void1rywzfrebt9x90kfg&rid=giphy.gif&ct=g'
+            bg.value = "LOADING ..";
+
+
+        });
+
+        const submit2 = document.querySelector('#sum2').addEventListener("click", function () {
+            const bg = document.querySelector('#sum2');
+            const lod = document.querySelector('#loading2');
+            lod.style.width = '50px';
+            lod.style.height = '35px';
+            lod.src = 'https://media3.giphy.com/media/3o7bu3XilJ5BOiSGic/giphy.gif?cid=ecf05e4717hw7w67ryutyba0ga5void1rywzfrebt9x90kfg&rid=giphy.gif&ct=g'
+            bg.value = "LOADING ..";
+
+
+        });
+
+
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); 
+        }
+
+    </script>
+    
+</body>
+
+<style>
+    q {
+        transition: 0.5s;
+    }
+
+    q:hover {
+        color: yellow;
+    }
+
+    html {
+        font-family: 'Raleway', sans-serif;
+
+    }
+
+    body {
+        background-color: #ffffff;
+        
+        color: rgb(246, 248, 250);
+    }
+
+    .card {
+
+        opacity: 0.7;
+        background-color: #e9e4e4;
+
+
+    }
+
+    .card-text {
+        color: whitesmoke;
+        font-family: 900;
+    }
+
+    textarea {
+        opacity: 0.7;
+        color: #ffffff;
+        background-color: #333333;
+        width: 600px;
+        height: 200px
+    }
+
+    textarea::placeholder {
+        color: whitesmoke;
+    }
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: rgb(186, 238, 241);
+    }
+
+    #heading {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        transition: 1s;
+        color: lightcoral;
+
+    }
+
+    #heading:hover {
+        color: yellow;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+
+    }
+
+    section {
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-color: #dfa6f0;
+        background-image: linear-gradient(to right, rgb(27, 240, 204) , rgb(180, 83, 156));
+
+
+
+        opacity: 1;
+        min-height: 90vh;
+    }
+
+
+    #phone{
+                                        
+                                        font-size: 25px;}
+
+
+    .rounded-top {
+        border-top-left-radius: 25px;
+        /* you can adjust the radius as needed */
+        border-top-right-radius: 25px;
+    }
+
+    .text-center {
+        font-size: 1.7em;
+        font-family: 'Comic Neue', cursive;
+    }
+
+    .bottom-left {
+
+        bottom: 10px;
+        left: 20px;
+        font-family: 'Comic Neue', cursive;
+    }
+
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+
+    h5 {
+        display: inline-block;
+        margin-right: 6px;
+    }
+
+
+    #imgshow {
+        width: 28rem;
+        margin-left: 2.5rem;
+        height: 20rem;
+    }
+
+    #imgshow2 {
+        width: 28rem;
+        margin-left: 2.5rem;
+        height: 20rem;
+    }
+
+    #imgshow3 {
+        width: 28rem;
+        margin-left: 2.5rem;
+        height: 20rem;
+    }
+
+
+
+    /* Media Queries */
+
+
+    @media (max-width: 950px) {
+
+
+
+        body {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 2;
+            flex-shrink: 1;
+
+        }
+
+        section {
+            background-repeat: repeat-x;
+            background-size: cover;
+            background-position-x: -320px;
+        }
+
+
+
+        #phone {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 100px;
+
+
+        }
+
+        h3 {
+            margin-left: 40px;
+            font-size: medium;
+        }
+
+        #sum {
+            margin-top: 30px;
+            margin-left: 120px;
+        }
+
+        #sum2 {
+            margin-top: 30px;
+            margin-left: 120px;
+        }
+
+        h5 {
+            font-size: smaller;
+            margin-left: 70px;
+        }
+
+        textarea {
+            width: 360px;
+            height: 160px;
+            margin-left: 15px;
+        }
+
+
+
+        .card-text {
+            font-size: x-small;
+        }
+
+        #imgshow {
+            margin-left: -20px;
+            height: 250px;
+            width: 330px;
+        }
+
+        #imgshow2 {
+            margin-left: -20px;
+            height: 250px;
+            width: 330px;
+        }
+
+        #imgshow3 {
+            margin-left: -20px;
+            height: 250px;
+            width: 330px;
+        }
+
+
+        .or {
+            margin-left: 30px;
+        }
+
+    }
+</style>
+
+
+
+
+
+</html>
